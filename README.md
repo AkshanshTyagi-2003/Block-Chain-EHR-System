@@ -19,51 +19,24 @@
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-| Layer         | Technology                        |
-|---------------|-----------------------------------|
-| Frontend      | React.js, Tailwind CSS, FontAwesome |
-| Blockchain    | Ethereum, Solidity, Web3.js / Ethers.js |
-| Smart Contracts | Role-based access control, Doctor Verification |
-| Optional Storage | IPFS / MongoDB / Firebase |
-| Deployment    | Vercel / Netlify (Frontend), Alchemy / Infura (Node)
+| Layer            | Technology                            |
+|------------------|----------------------------------------|
+| Frontend         | React.js, Tailwind CSS                |
+| Routing          | React Router (BrowseRouter.js)         |
+| Blockchain       | Ethereum, Solidity, Web3.js            |
+| Smart Contracts  | Role-based access control, verification |
+| Testing          | Jest, React Testing Library            |
+| Deployment       | (To be updated: Vercel / Netlify)      |
 
----
 
 ## Folder Structure
-blockcare-ehr/
-├── public/
-│   ├── index.html
-│   └── favicon.ico
+blockcare-ehr/ ├── public/ │ ├── favicon.ico │ ├── index.html │ ├── logo192.png │ ├── logo512.png │ ├── manifest.json │ ├── robots.txt
 
-├── src/
-│   ├── assets/                  # Images, icons, logos
-│   ├── components/              # Reusable UI components (Navbar, Cards, Forms)
-│   ├── pages/                   # Main pages (Dashboard, Login, RecordUpload)
-│   ├── contracts/               # Compiled and raw smart contracts
-│   │   ├── AccessControl.sol
-│   │   ├── DoctorRegistry.sol
-│   │   └── artifacts/           # Truffle/Hardhat output (if used)
-│   ├── context/                 # React Context for auth, wallet, user role
-│   ├── hooks/                   # Custom React hooks (e.g. useWallet, useRecords)
-│   ├── utils/                   # Helper functions (e.g. IPFS, formatting, validations)
-│   ├── styles/                  # Tailwind config or custom CSS
-│   ├── App.js
-│   ├── index.js
-│   └── config.js                # App-wide configs (contract addresses, constants)
+├── src/ │ ├── App.js │ ├── App.css │ ├── App.test.js │ ├── BrowseRouter.js # Routing logic │ ├── index.js │ ├── index.css │ ├── logo.svg │ ├── reportWebVitals.js │ ├── setupTests.js
 
-├── smart-contracts/            # Source and deployment scripts for smart contracts
-│   ├── contracts/
-│   ├── migrations/
-│   ├── test/
-│   ├── truffle-config.js       # or hardhat.config.js
-
-├── .env                        # API keys, Infura/Alchemy keys
-├── .gitignore
-├── README.md
-├── package.json
-└── hardhat.config.js / truffle-config.js
+├── package.json ├── package-lock.json ├── tailwind.config.js ├── truffle-config.js ├── README.md
 
 
 ---
@@ -91,14 +64,17 @@ blockcare-ehr/
 
 ---
 
-## Future Enhancements
+## 🔮 Future Enhancements
 
-- IPFS/Filecoin integration for fully decentralized file storage
-- Zero Knowledge Proofs for privacy-preserving verification
-- Cross-chain EHR record interoperability
-- AI integration for medical data analytics
+- **Add IPFS integration** for decentralized storage of medical records
+- **Integrate MongoDB** for storing metadata and user activity logs
+- **Deploy Smart Contracts on Testnet/Mainnet** via Alchemy or Infura
+- **Add QR-based doctor identity verification**
+- **Implement user authentication** (e.g., MetaMask or Firebase login)
+- **Create an admin dashboard** for hospital-level insights
+- **Mobile responsiveness improvements**
+- **Enable patient record versioning** and history tracking
 
----
 
 ## License
 
